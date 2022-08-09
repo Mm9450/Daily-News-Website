@@ -22,7 +22,7 @@ xhr.onload = function () {
     let newsHtml = "";
     articles.forEach(function (element,index) {
       //console.log(element,index)
-      for (let news in articles) {
+      // for (let news in articles) {
 
         let news = ` <div class="accordion-item">
       <h2 class="accordion-header" id="heading${index}">
@@ -38,7 +38,7 @@ xhr.onload = function () {
     </div>`;
 
         newsHtml += news;
-      }
+      // }
 
     });
     newsAccordion.innerHTML = newsHtml;
